@@ -8,8 +8,17 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+.wrapper {
+  padding-inline: 200px;
+}
 img {
   width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
 }
 #root {
   --primary-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -35,3 +44,126 @@ img {
   line-height: 30px;
 }
 /* common styles end */
+
+/* header styles start  */
+header {
+  padding-block: 24px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 45px;
+  font-weight: 700;
+}
+.nav-menu,
+.nav-menu div,
+.nav-btn,
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+.nav-menu,
+.nav-menu > div {
+  gap: 32px;
+}
+.nav-link {
+  color: #3c354f;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav-btn {
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  border: none;
+  padding: 18px 24px;
+}
+.nav-btn-text {
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-icon {
+  gap: 16px;
+}
+.nav-icon .fa-youtube {
+  font-size: 1.4rem;
+  color: #f61c0d;
+}
+.nav-icon .fa-tiktok {
+  font-size: 1rem;
+}
+.nav-logo img {
+  width: 86.041px;
+  height: 40px;
+}
+.nav-logo span {
+  color: #ff42a5;
+}
+/* header styles end  */
+
+/* media query for mobile devices start here */
+@media only screen and (max-width: 426px) {
+  header {
+    box-shadow: none;
+  }
+  .wrapper {
+    padding-inline: 10px;
+  }
+
+  nav,
+  .nav-menu,
+  .nav-menu > div {
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav,
+  .nav-menu {
+    gap: 40px;
+  }
+
+  .nav-menu > div {
+    gap: 20px;
+  }
+  .nav-logo {
+    justify-content: center;
+  }
+}
+/* media query for mobile devices end here */
+
+/* media query for tablet devices start here */
+@media only screen and (min-width: 427px) and (max-width: 768px) {
+  header {
+    box-shadow: none;
+  }
+  .wrapper {
+    padding-inline: 10px;
+  }
+
+  nav,
+  .nav-menu,
+  .nav-menu > div {
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav,
+  .nav-menu {
+    gap: 40px;
+  }
+
+  .nav-menu > div {
+    gap: 20px;
+  }
+  .nav-logo {
+    justify-content: center;
+  }
+}
+/* media query for tablet devices end here */
