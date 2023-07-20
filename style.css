@@ -327,7 +327,7 @@ nav {
   padding-block: 120px;
 }
 
-.all-games-container > div {
+.all-games-container div {
   display: flex;
   gap: 20px;
   margin-bottom: 40px;
@@ -353,6 +353,9 @@ nav {
   border: 2px solid #f948b2;
   cursor: pointer;
 }
+.all-games-container button:hover span {
+  color: #f948b2;
+}
 .all-games-container button img {
   width: 60px;
   height: 60px;
@@ -363,6 +366,7 @@ nav {
   font-weight: 600;
   white-space: nowrap;
 }
+
 .all-games-container-for-mobile {
   display: none;
 }
@@ -635,7 +639,9 @@ footer {
     border: 2px solid #f948b2;
     cursor: pointer;
   }
-
+  .all-games-container-for-mobile button:hover span {
+    color: #f948b2;
+  }
   /* footer styles for mobile  */
   footer {
     background: #0b0223;
@@ -813,10 +819,13 @@ footer {
   .all-games-container-for-mobile div {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-bottom: 10px;
   }
   .all-games-container-for-mobile button {
+    position: relative;
+    display: inline-block;
     border: 0;
     border-radius: 50px;
     background: #fff;
@@ -839,6 +848,9 @@ footer {
   .all-games-container-for-mobile button:hover {
     border: 2px solid #f948b2;
     cursor: pointer;
+  }
+  .all-games-container-for-mobile button:hover span {
+    color: #f948b2;
   }
   /* footer styles for tablet  */
   footer {
